@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Docters website</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font-awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custome css file -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <!-- Header-start -->
+  <header>
+    <div class="inner">
+      <div class="flex-box">
+
+
+
+        <section class="logo-section">
+          <img src="images/header-logo-1.svg" alt="">
+        </section>
+        <!-- Navigation -->
+        <nav>
+
+          <ul class="sideBar">
+            <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
+            <li><a href="#"><span class="home">Home</span> </a></li>
+            <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="hideMenu">
+            <li class="navBar" id="menu" onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="hideOnmobile"><a href="index.html" class="active">Home</a></li>
+            <li class="drop-down hideOnmobile"> <a href="service.html" class="developer ">Service</a>
+              <div class="sub-menu">
+                <div class="space">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="part-1">
+                        <a href="#">
+                          <div class="section">
+                            <img src="images/bedoctor-services-pic1.webp" alt="">
+                            <h4>Dental <br> Department</h4>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="section">
+                            <img src="images/bedoctor-services-pic3.webp" alt="">
+                            <h4>Pediatrics</h4>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="section">
+                            <img src="images/bedoctor-services-pic5.webp" alt="">
+                            <h4>Ear treatment</h4>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="part-2">
+                        <a href="#">
+                          <div class="section">
+                            <img src="images/bedoctor-services-pic2.webp" alt="">
+                            <h4>Cardiology</h4>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="section">
+                            <img src="images/bedoctor-services-pic4.webp" alt="">
+                            <h4>X-Ray</h4>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="section">
+                            <img src="images/bedoctor-services-pic6.webp" alt="">
+                            <h4>Pergnancy</h4>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li><a href="about.html" class="hideOnmobile">About</a></li>
+            <li><a href="#" class="hideOnmobile">Packages</a></li>
+            <li><a href="#" id="contact" class="hideOnmobile">Contact</a></li>
+          </ul>
+        </nav>
+        <section class="phone">
+          <a href="#"> <img src="images/mobile-keypad.svg" alt="" class="dial-pad"> </a>
+          <a href="#">
+            <h4>+91 &nbsp; 8982103029</h4>
+            <h3>Call us</h3>
+          </a>
+          <a href="#"> <img src="images/header-message-logo.svg" alt="" id="message"></a>
+
+        </section>
+
+
+      </div>
+
+      <!-- Information about doctor -->
+      <section class="about-data">
+        <div class="image-wrapper"> <img src="images/bedoctor-about-pic1.webp" alt="img"></div>
+        <h1>I’m <span class="color-different"> Kim Granger</span></h1>
+        <p>She is DR.kimgranger from new-work.She is 28 yeas old and <br> she is lives with his family in new work.She
+          is
+          specialists in gyanology and pediatric <br> deases</p>
+        <button>My experience <i class="fa-solid fa-angle-down"></i></button>
+      </section>
+
+      <!-- About-deparment -->
+      <section class="four-column">
+        <div class="flex-box clearfix">
+          <section class="one">
+            <img src="images/notes.svg" alt="note-img">
+            <h5>Dental Department</h5>
+            <h6>Our dental deparment has all kind of facilities</h6>
+          </section>
+          <section class="two">
+            <img src="images/cardiology.svg" alt="note-img">
+            <h5>Cardiology</h5>
+            <h6>Cardiology deparment has all kind of facilities</h6>
+          </section>
+          <section class="three">
+            <img src="images/bendch.svg" alt="note-img">
+            <h5>Emergency Care</h5>
+            <h6>Our emergency ward has all kind of facilities</h6>
+          </section>
+          <section class="four">
+            <img src="images/pediatrics.svg" alt="note-img">
+            <h5>Pediatrics</h5>
+            <h6>Pediatrics deparment has all kind of facilities</h6>
+          </section>
+        </div>
+      </section>
+
+    </div>
+  </header>
+
+  <!-- Doctor's qualities section -->
+  <section class="doctor-knowledge">
+    <div class="inner">
+      <div class="flex-box">
+        <section class="doctor-bio">
+          <h2>Our hospital's doctor are well educated and every doctor has mastery in his deparment.</h2>
+          <div class="flex-box">
+            <section class="container-1">
+              <div class="detail-points">
+                <div class="icon-wrapper">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="point">Our dental deparment has all kind of facilities and treatment to cure our
+                  patients quickly.</div>
+              </div>
+              <div class="detail-points">
+                <div class="icon-wrapper">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="point">If you choose our hospital facilities you can get a quick reponse by our
+                  doctor's team.</div>
+              </div>
+              <div class="detail-points">
+                <div class="icon-wrapper">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="point">All type of modern treatment available in here with Hi-tech machines.
+                </div>
+              </div>
+            </section>
+            <section class="container-2">
+              <div class="detail-points">
+                <div class="icon-wrapper">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="point">If you choose our hospital facilities you can get a quick reponse by our
+                  doctor's team.</div>
+              </div>
+              <div class="detail-points">
+                <div class="icon-wrapper">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="point">All type of modern treatment available in here with Hi-tech machines.
+                </div>
+              </div>
+            </section>
+          </div>
+          <button>Read about me</button>
+        </section>
+        <section class="doctor-profile">
+          <img src="images/bedoctor-about-pic2.webp"  alt="profile-img">
+        </section>
+      </div>
+    </div>
+  </section>
+
+   <!-- Doctor-intro section start -->
+   <section class="intro-section">
+    <div class="inner">
+      <div class="flex-box">
+        <div class="doctor-img"><img src="images/bedoctor-home-pic2.webp" alt=""></div>
+        <div class="intro-data">
+          <img src="images/quote-svg.svg" alt="">
+          <p>She is DR.kimgranger from new-work.She is 28 yeas old and she is lives with his family in new work.She is
+            specialists in gyanology and pediatric deases.She has 5 years of experince in this area and she completed
+            sucessfully more then 50 surgery in his career. </p>
+          <h3>KimGranger</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Doctor-intro section end -->
+
+  <!-- Appointment-section start -->
+  <section class="appointment-section">
+    <div class="inner">
+      <div class="flex-box">
+        <section class="part-1">
+          <img src="images/bedoctor-about-pic3.webp" alt="">
+        </section>
+        <section class="part-2">
+           <section>
+          <img src="images/location.svg" alt="location-svg">
+          <h3>Visit our new facility. <br> We're looking forward to <br> seeing you!</h3>
+          <h5>Level 13, 2 Elizabeth St, <br> Delhi, Victoria 3000, <br> India</h5>
+          <button>Book an appointment</button>
+        </section>
+        </section>
+      </div>
+    </div>
+
+  </section>
+  <!-- Appointment-section end -->
+
+
+  <!-- Book-appointment section start -->
+  <section class="book-appointment-section">
+    <div class="inner">
+      <section class="bg-wrapper">
+        <img src="images/heart-icon-4.svg" alt="heart-img">
+        <h2>Don't wait and make an <br> appointment today</h2>
+        <button>Book an appointment</button>
+      </section>
+    </div>
+
+  </section>
+  <!-- Book-appointment section end -->
+
+  <!-- Contact-section start -->
+  <section class="contact-section">
+    <div class="inner">
+      <img src="images/heart-icon-5.svg" alt="heart-img">
+      <div class="flex-box">
+        <section class="social-media">
+          <h3>Level 13, 2 Bus stand St, <br> Mandsaur, Mandsaur 458002, <br> India</h3>
+          <h5>Opening hours: Mon - Sat: 9 AM - 6 PM</h5>
+          <section class="social-media-icons">
+            <div class="icon-wrapper"> <i class="fa-brands fa-facebook-f"></i></div>
+            <div class="icon-wrapper"><i class="fa-brands fa-instagram"></i></div>
+            <div class="icon-wrapper"> <i class="fa-brands fa-pinterest-p"></i></div>
+          </section>
+        </section>
+        <section class="contact-number">
+
+          <h5>Contact me</h5>
+          <h2>+91 &nbsp; 8982103029</h2>
+          <span class="comman-hover"><button>Contact us</button></span>
+        </section>
+        <section class="links">
+          <h3>Useful links</h3>
+          <ul>
+            <li><a href="">Contact with us</a></li>
+            <li><a href="">Who we are?</a></li>
+            <li><a href="">Safety data sheets</a></li>
+            <li><a href="">Job application</a></li>
+            <li><a href="">Privacy policy</a></li>
+          </ul>
+        </section>
+      </div>
+      <hr>
+    </div>
+  </section>
+  <!-- Contact-section end -->
+
+  <!-- Footer-section start -->
+  <footer>
+    <div class="inner">
+      <h6>© 2023 developerd by <a href="https://developersunil.com/" target="_blank">Developer Sunil</a> | All Rights Reserved</h6>
+    </div>
+  </footer>
+  <!-- Footer-section end -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Custome js file -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
